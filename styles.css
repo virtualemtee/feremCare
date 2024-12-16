@@ -101,7 +101,12 @@ footer p {
 /* Responsive Design */
 @media (max-width: 768px) {
     .grid-container {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr); /* Two cards per row */
+        gap: 1rem; /* Adjust spacing between cards */
+    }
+
+    .card {
+        max-width: 100%; /* Allow cards to fill the grid column */
     }
 
     header h1 {
@@ -115,6 +120,20 @@ footer p {
 
 @media (max-width: 480px) {
     .grid-container {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr); /* Ensures two cards on small screens */
+        gap: 0.8rem; /* Adjust spacing for smaller devices */
+    }
+
+    .card img {
+        height: 120px; /* Reduce image height for smaller cards */
+    }
+
+    .card h3 {
+        font-size: 1rem; /* Reduce text size for compact cards */
+    }
+
+    .card p {
+        font-size: 0.8rem;
+        padding: 0 0.5rem 0.8rem;
     }
 }
