@@ -106,7 +106,7 @@ footer p {
     }
 
     .card {
-        max-width: 100%; /* Allow cards to fill the grid column */
+        max-width: 50%; /* Allow cards to fill the grid column */
     }
 
     header h1 {
